@@ -22,11 +22,13 @@ def post_request():
         email = data["email"]
         phone = data["phone"]
 
-        response_data = {
+        operations = {
             "name": name.lower(),
             "email": email.lower(),
             "phone": int(phone),
         }
+
+        response_data = {"data": operations, "message": True}
 
         return Response(json.dumps(response_data), 200)
 
