@@ -9,7 +9,7 @@
 - flask
 - scikit-learn
 
-To install these dependencies, run _**pip install -r requirements.txt**_.
+To install these dependencies, run _**pip install -r requirements.txt**_
 
 **Install Postman**
 
