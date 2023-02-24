@@ -2,7 +2,7 @@
 ## _Requirements_
 
 **Clone above repository using the command**
-- git clone _**placeholder**_
+- git clone _git@github.com:pulkit-td/IDC410-Flask.git_
 
 **Python Dependencies**
 
