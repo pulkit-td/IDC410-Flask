@@ -47,7 +47,7 @@ def get_request():
         if bool(human):
             response_data = {"data": "Yes", "message": True}
         else:
-            response_data = {"data": "No", "message": False}
+            response_data = {"data": "No", "message": True}
 
         return Response(json.dumps(response_data), 200)
 
