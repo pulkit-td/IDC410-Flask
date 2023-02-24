@@ -5,6 +5,7 @@ import json
 app = Flask(__name__)
 app.register_blueprint(model_blueprint)
 
+
 @app.route("/health_check", methods=["GET"])
 def health_check():
 
@@ -39,13 +40,13 @@ def post_request():
 @app.route("/get_request", methods=["GET"])
 def get_request():
     try:
-        data = request.agrs()
+        data = request.args
         human = data["human"]
         if bool(human):
             response_data = {"data": "Yes", "message": True}
         else:
             response_data = {"data": "No", "message": False}
-            
+
         return Response(json.dumps(response_data), 200)
 
     except Exception as e:
