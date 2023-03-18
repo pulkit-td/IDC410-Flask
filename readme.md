@@ -27,9 +27,15 @@ Download and install postman from https://www.postman.com/downloads/
 
 ----
 
-**How to call REST api**
+**How to Run Flask serve and call REST api**
 
 - Run the flask server (We are assuming that the server is running locally and port is 5000)
+  1. Naviagte to root of the cloned repo.
+  2. Run **pip install -r requirements.txt** to install dependencies.
+  3. Run **python app.py** or **python3 app.py** (the server is now running on **localhost:5000**)
+  
+  Note - You have to run step 2 only once in a python env.
+  
 - Open Postman
   1. Click on New
   2. Click on HTTP Request
